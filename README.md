@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Macy AI — Intelligent Video Creation Studio
 
 Macy AI is an AI-powered multilingual video-generation application that transforms text topics into narrated videos using artificial intelligence, stock footage, automated voiceovers, subtitles, and FFmpeg rendering.
@@ -34,3 +35,7 @@ Macy AI is an AI-powered multilingual video-generation application that transfor
 ## Development Status
 
 The core video-generation workflow has been implemented. Additional editing, audio-enhancement, and deployment features are being developed and tested.
+=======
+# Macyai.in
+My new project ai video generation.
+>>>>>>> origin/main
