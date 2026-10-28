@@ -1,0 +1,129 @@
+/* Macy AI Step 4 — Professional Midnight Blue theme */
+:root {
+    --macy-bg: #06111f;
+    --macy-panel: #0a182a;
+    --macy-input: #192438;
+    --macy-border: #294360;
+    --macy-text: #f3f7ff;
+    --macy-muted: #9fb4cf;
+    --macy-blue: #3b82f6;
+}
+
+.stApp {
+    background: linear-gradient(160deg, #06111f 0%, #071526 55%, #091b2e 100%);
+    color: var(--macy-text);
+}
+
+.block-container {
+    max-width: 1600px;
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* Keep the browser's developer toolbar away from our top-right controls. */
+[data-testid="stHeader"] {
+    background: transparent;
+}
+[data-testid="stToolbar"] {
+    display: none;
+}
+
+/* Consistent video settings panels */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: linear-gradient(180deg, rgba(11, 25, 43, .96), rgba(9, 21, 36, .96));
+    border: 1px solid var(--macy-border) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+}
+
+h3 {
+    font-size: 1.12rem !important;
+    font-weight: 700 !important;
+}
+
+.macy-brand {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2.6rem;
+    line-height: 1.12;
+    letter-spacing: -.03em;
+    margin-bottom: .4rem;
+}
+.macy-brand span {
+    color: #60a5fa !important; /* Fix previous red logo accent */
+}
+.macy-subtitle {
+    color: var(--macy-muted) !important;
+    font-size: .96rem;
+    margin: 0;
+}
+
+[data-testid="stTextArea"] textarea,
+[data-testid="stTextInput"] input,
+[data-testid="stNumberInput"] input,
+[data-testid="stSelectbox"] [data-baseweb="select"] > div {
+    background: var(--macy-input) !important;
+    color: var(--macy-text) !important;
+    border: 1px solid #30455f !important;
+    border-radius: 10px !important;
+}
+
+[data-testid="stButton"] button,
+[data-testid="stPopover"] button {
+    border-radius: 10px !important;
+    border-color: #2d4e74 !important;
+    background: #10243c !important;
+    color: #f4f8ff !important;
+}
+[data-testid="stButton"] button:hover,
+[data-testid="stPopover"] button:hover {
+    background: #173455 !important;
+    border-color: var(--macy-blue) !important;
+}
+[data-testid="stButton"] button[kind="primary"] {
+    background: linear-gradient(180deg, #3b82f6, #2563eb) !important;
+    border-color: #3b82f6 !important;
+    color: white !important;
+}
+
+[data-testid="stWidgetLabel"] p {
+    color: var(--macy-text) !important;
+    font-size: .88rem;
+    font-weight: 600;
+}
+
+/* Dialogs inherit midnight-navy cards */
+[role="dialog"] {
+    background: #0c1b30 !important;
+    border: 1px solid var(--macy-border) !important;
+    border-radius: 16px !important;
+}
+
+@media (max-width: 1000px) {
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .macy-brand {
+        font-size: 2.1rem;
+    }
+}
+
+/* Macy AI brand accent */
+.macy-brand span,
+.macy-title .accent {
+    color: #60A5FA !important;
+}
+
+/* Blue primary focus */
+input:focus,
+textarea:focus {
+    border-color: #3B82F6 !important;
+    outline-color: #3B82F6 !important;
+}
+
+/* Blue button focus */
+.stButton button:focus-visible {
+    border-color: #60A5FA !important;
+    box-shadow: 0 0 0 2px rgba(59,130,246,.25);
+}

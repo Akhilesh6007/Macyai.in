@@ -1,0 +1,57 @@
+
+# ==========================================
+# MACY AI - GIT IGNORE CONFIGURATION
+# ==========================================
+
+# Python virtual environments
+.venv/
+.venv-1/
+venv/
+
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment variables and API secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Generated video files
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Generated audio files
+*.mp3
+*.wav
+*.aac
+*.m4a
+
+# Generated subtitles and speech metadata
+*.srt
+*.jsonl
+
+# Generated tasks, video outputs, cached footage,
+# scene plans and validation results
+/storage/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
